@@ -9,24 +9,28 @@
 // @version 1
 // ==/UserScript==
 
-var myVar = setInterval(function(){ myTimer() }, 50);
+var Timer = setInterval(TimerFunction, 50);
 
-function myTimer() {
+function TimerFunction() {
 	if(window.location.href.indexOf("encounters") > -1) {
 		if(typeof document.getElementsByClassName('js-ovl-close')[0] == "undefined"){
 			document.getElementsByClassName('js-profile-header-vote b-link')[0].click();
 		}
 		else
 		{
-			while(typeof document.getElementsByClassName('js-ovl-close')[0] != "undefined"){
-				document.getElementsByClassName('js-ovl-close')[0].click();
-			}
+			setInterval(RemoveAlert, 1000);
 
-			myStopFunction();
+			StopFunction();
 		}
 	}
 }
 
-function myStopFunction() {
-	clearInterval(myVar);
+function StopFunction() {
+	clearInterval(Timer);
+}
+
+function RemoveAlert() {
+	for (i = 0; i < document.getElementsByClassName('js-ovl-close').length; i++) {
+		document.getElementsByClassName('js-ovl-close')[i].click();
+	}
 }
