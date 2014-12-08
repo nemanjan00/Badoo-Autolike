@@ -12,27 +12,28 @@
 // ==/UserScript==
 
 var Timer = setInterval(TimerFunction, 50);
+var Timer1 = setInterval(RemoveAlert, 50);
 
 function TimerFunction() {
 	if(window.location.href.indexOf("encounters") > -1) {
-		if(typeof document.getElementsByClassName('js-ovl-close')[0] == "undefined"){
+		if(typeof document.getElementsByClassName('wizard_cloud')[0] == "undefined"){
 			document.getElementsByClassName('js-profile-header-vote b-link')[0].click();
 		}
 		else
 		{
-			setInterval(RemoveAlert, 1000);
-
 			StopFunction();
+		}
+	}
+}
+
+function RemoveAlert() {
+	if(window.location.href.indexOf("encounters") > -1) {
+		for (i = 0; i < document.getElementsByClassName('js-ovl-close').length; i++) {
+			document.getElementsByClassName('js-ovl-close')[i].click();
 		}
 	}
 }
 
 function StopFunction() {
 	clearInterval(Timer);
-}
-
-function RemoveAlert() {
-	for (i = 0; i < document.getElementsByClassName('js-ovl-close').length; i++) {
-		document.getElementsByClassName('js-ovl-close')[i].click();
-	}
 }
