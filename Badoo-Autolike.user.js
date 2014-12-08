@@ -27,5 +27,3 @@ function myTimer() {
 function myStopFunction() {
 	clearInterval(myVar);
 }
-
-console.log("Test ;)");
