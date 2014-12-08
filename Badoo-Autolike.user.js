@@ -8,7 +8,7 @@
 // @version 1
 // ==/UserScript==
 
-var myVar = setInterval(function(){ myTimer() }, 10);
+var myVar = setInterval(function(){ myTimer() }, 50);
 
 function myTimer() {
 	if(typeof document.getElementsByClassName('js-ovl-close')[0] == "undefined"){
