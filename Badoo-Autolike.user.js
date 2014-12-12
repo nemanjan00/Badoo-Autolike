@@ -21,9 +21,11 @@ var running = 1;
 var URLHandlerService = setInterval(URLHandler, 1000);
 
 function URLHandler() {
-	if(window.location.href.indexOf("encounters") > -1 && window.location.href != oldurl) {
-		AutoYesService = setInterval(AutoYes, 50);
-		RemoveAlertService = setInterval(RemoveAlert, 50);
+	if(window.location.href.indexOf("encounters") > -1) {
+		if(window.location.href != oldurl){
+			AutoYesService = setInterval(AutoYes, 50);
+			RemoveAlertService = setInterval(RemoveAlert, 50);
+		}
 	}
 	else
 	{
