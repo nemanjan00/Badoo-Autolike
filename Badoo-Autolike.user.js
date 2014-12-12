@@ -41,7 +41,7 @@ function URLHandler() {
 
 function AutoYes() {
 	if(window.location.href.indexOf("encounters") > -1) {
-		if(typeof document.getElementsByClassName('wizard_cloud')[0] == "undefined"){
+		if(typeof document.getElementsByClassName('wizard_cloud')[0] == "undefined" && running == 1){
 			document.getElementsByClassName('js-profile-header-vote b-link')[0].click();
 		}
 		else
