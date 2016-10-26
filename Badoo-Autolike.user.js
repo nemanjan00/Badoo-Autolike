@@ -5,10 +5,10 @@
 // @include https://*.badoo.com/*
 // @include http://badoo.com/*
 // @include http://*.badoo.com/*
-// @downloadURL https://raw.githubusercontent.com/nemanjan00/Badoo-Autolike/master/Badoo-Autolike.user.js
+// @downloadURL https://raw.githubusercontent.com/alexey-pimenov/Badoo-Autolike/master/Badoo-Autolike.user.js
 // @namespace https://github.com/nemanjan00/Badoo-Autolike
-// @updateURL https://raw.githubusercontent.com/nemanjan00/Badoo-Autolike/master/Badoo-Autolike.user.js
-// @version 6
+// @updateURL https://raw.githubusercontent.com/alexey-pimenov/Badoo-Autolike/master/Badoo-Autolike.user.js
+// @version 7
 // ==/UserScript==
 
 var oldurl = "";
