@@ -52,3 +52,7 @@ If you don't want or can't install one of the previously mentioned browser exten
 2. Copy the following snippet and paste it into the developer console on the TPP page: `javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://rawgit.com/nemanjan00/Badoo-Autolike/master/Badoo-Autolike.user.js';})();`
 
 3. Press `Enter` to run the code.
+
+## Author
+
+[nemanjan00](https://github.com/nemanjan00)
