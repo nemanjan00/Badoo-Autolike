@@ -1,5 +1,7 @@
 # Badoo-Autolike
 
+# **NOTE: This is better version: https://github.com/nemanjan00/BadooNearbyLike**
+
 ## Using the script as a JavaScript bookmark
 
 Fast and lightweight way to run the script.
