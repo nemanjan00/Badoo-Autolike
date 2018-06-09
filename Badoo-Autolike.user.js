@@ -8,7 +8,7 @@
 // @downloadURL https://raw.githubusercontent.com/nemanjan00/Badoo-Autolike/master/Badoo-Autolike.user.js
 // @namespace https://github.com/nemanjan00/Badoo-Autolike
 // @updateURL https://raw.githubusercontent.com/nemanjan00/Badoo-Autolike/master/Badoo-Autolike.user.js
-// @version 6
+// @version 7
 // ==/UserScript==
 
 var oldurl = "";
@@ -42,7 +42,7 @@ function URLHandler() {
 function AutoYes() {
 	if(window.location.href.indexOf("encounters") > -1) {
 		if(typeof document.getElementsByClassName('wizard_cloud')[0] == "undefined" && running == 1){
-			document.getElementsByClassName('js-profile-header-vote b-link')[0].click();
+			document.getElementsByClassName('js-profile-header-vote-yes')[0].click();
 		}
 		else
 		{
