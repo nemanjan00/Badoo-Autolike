@@ -2,6 +2,8 @@
 
 # **NOTE: This is better version: https://github.com/nemanjan00/BadooNearbyLike**
 
+# **I was banned from Badoo, so, I will not be maintaining this project**
+
 ## Using the script as a JavaScript bookmark
 
 Fast and lightweight way to run the script.
